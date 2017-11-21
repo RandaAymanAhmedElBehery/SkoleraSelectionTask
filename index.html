@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		
+		<title> Skolera Task </title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	 	<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/usersList.js"></script>	
+
+	</head>
+	
+	<body ng-app="Users" ng-controller = "usersList" >
+	
+		<header>
+			<center>
+				<img src = "images/Github.png" >
+				<h1>Github Users</h1>
+			</center>
+		</header>
+		
+		
+		<section id="users" ng-init="loadAll()" >
+			Users List
+			
+			
+			<div ng-repeat="user in arr" ng-click="loadUser(user.id)" >
+						<center id = "name">{{user.login}}</center>
+			</div>
+			
+			<center><button ng-click="loadAll()"> Load More </button></center>
+		</section>
+		
+		<section id="userInfo" ng-init="loadUser('1')">
+			User Info.
+			<center><img id = "img" src={{avatar_url}} ></center>
+			<br>
+			<label ng-model="label" >name: {{name}}</label>
+			<br>
+			 id: {{id}} 
+			 <br>
+			 email : {{email}}
+		</section>
+		
+		
+	</body>
+
+
+</html>

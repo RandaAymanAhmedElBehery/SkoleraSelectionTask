@@ -1,0 +1,56 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+header>center>h1
+{
+	display:inline;
+}
+
+header>center>img
+{
+	width: 50px;
+	position: relative;
+	top: 9px;
+}
+
+header
+{
+	padding-bottom: 3px;
+	border-bottom-style: solid ;
+	border-bottom-color: #000 ;
+	border-bottom-width: 3px;
+	margin-bottom: 50px;
+}
+
+#users
+{
+	width: 19vw;
+	height: 82.25vh;
+	border-right-style: solid ;
+	border-right-color: #000 ;
+	border-right-width: 2px;
+	border-top-style: solid ;
+	border-top-color: #000 ;
+	border-top-width: 2px;
+	float: left;
+}
+
+#userInfo
+{
+	width: 79vw;
+	float: left;
+	border-top-style: solid ;
+	border-top-color: #000 ;
+	border-top-width: 2px;
+	height: 200px;
+	
+
+}
+
+#name
+{
+	margin-bottom: 15px;
+}
